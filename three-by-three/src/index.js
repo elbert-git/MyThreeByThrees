@@ -3,9 +3,28 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 //create header
-//create bottom div
-//create board
+function Header(){
+	return(
+		<div>
+			<div className="name name-font">
+				Elbert Nathanael's
+			</div>
+			<div className="three-x-three header-font">
+				3x3s
+			</div>
+		</div>
+	)
+}
+
 //create tile
+//create board
+//create bottom div
+function BottomDiv(){
+	return (
+		<div>bottom</div>
+	)
+}
+
 
 
 
@@ -13,8 +32,9 @@ import './index.css';
 class Main extends React.Component{
 	render(){
 		return(
-			<div>
-				hello
+			<div className="parent-div red-border">
+				<Header />
+				<BottomDiv />
 			</div>
 		)
 	}

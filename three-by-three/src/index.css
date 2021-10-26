@@ -1,0 +1,48 @@
+/* debug */
+.red-border {
+	border-style: solid;
+	border-width: 3px;
+	border-color: red;
+}
+
+
+
+/* top title */
+.parent-div {
+	display:flex;
+	justify-content: center;
+	flex-direction:column;
+	width: 100vw;
+	height: 100vh;
+	margin:0;
+	background-color: #282a36;
+}
+ 
+.name{
+	text-align:center;
+	color: #f8f8f2;
+}
+
+.three-x-three{
+	margin: 0.2em;
+	text-align: center;
+	font-size: 4em;
+	color: #f8f8f2;
+}
+
+
+
+
+
+
+
+
+
+/* fonts */
+.header-font{
+	font-family: 'Luckiest Guy', cursive;
+}
+ 
+.name-font{
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
