@@ -2,34 +2,72 @@
 .red-border {
 	border-style: solid;
 	border-width: 3px;
-	border-color: red;
+	border-color: rgba(255,0,0,0.2);
+}
+
+
+/* parents */
+.parent-div {
+	display:flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	margin:0;
+	background-color: #282a36;
 }
 
 
 
 /* top title */
-.parent-div {
-	display:flex;
-	justify-content: center;
-	flex-direction:column;
-	width: 100vw;
-	height: 100vh;
-	margin:0;
-	background-color: #282a36;
-}
- 
 .name{
 	text-align:center;
 	color: #f8f8f2;
+	font-size: 1.5em;
+	width: 100%;
 }
-
 .three-x-three{
-	margin: 0.2em;
 	text-align: center;
 	font-size: 4em;
 	color: #f8f8f2;
+	width: 100%;
 }
 
+
+/* bottom div */
+.bottom-parent{
+	width:100%;
+}
+
+
+/* navbar */
+.parent-navbar{
+	display: flex;
+	justify-content: center;
+}
+
+.navbar-element{
+	font-size: 1.5em;
+	background-color: rgba(0,0,0,0);
+	color: #f8f8f2;
+	border-style: solid;
+	padding-left: 1em;
+	padding-right: 1em;
+	border-width: 0;
+	border-bottom-width: 2px;
+}
+
+/* board */
+.board-parent{
+	display:flex;
+	flex-direction:column;
+}
+.single-tile{
+	display: flex;
+	align-items: center;
+	flex-direction: flex-start;
+}
 
 
 

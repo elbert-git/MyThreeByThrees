@@ -6,10 +6,10 @@ import './index.css';
 function Header(){
 	return(
 		<div>
-			<div className="name name-font">
+			<div className="name name-font red-border">
 				Elbert Nathanael's
 			</div>
-			<div className="three-x-three header-font">
+			<div className="three-x-three header-font red-border">
 				3x3s
 			</div>
 		</div>
@@ -17,13 +17,67 @@ function Header(){
 }
 
 //create tile
-//create board
-//create bottom div
-function BottomDiv(){
-	return (
-		<div>bottom</div>
+function Tile(){
+	return(
+		<div className="single-tile">
+			aaa
+		</div>
 	)
 }
+//create board
+class Board extends React.Component {
+	render(){
+		return(
+			<div className="board-parent">
+				<div className="board-row red-border">
+					<Tile/>
+					<Tile/>
+					<Tile/>
+				</div>
+				<div className="board-row red-border">
+					<Tile/>
+					<Tile/>
+					<Tile/>
+				</div>
+				<div className="board-row red-border">
+					<Tile/>
+					<Tile/>
+					<Tile/>
+				</div>
+			</div>
+		)
+	}
+}
+//create category navbar 
+function NavBar(){
+	return(
+		<div className="parent-navbar">
+			<button className="navbar-element name-font">Movies</button>
+			<button className="navbar-element name-font">Anime</button>
+			<button className="navbar-element name-font">Books</button>
+			<button className="navbar-element name-font">Games</button>
+		</div>
+	)
+}
+//create bottom div
+class BottomDiv extends React.Component{
+	constructor(props){
+		super(props);
+		this.state = {
+			currentArray: [],
+		}
+	}
+	 
+	render(){
+		return (
+			<div className="bottom-parent red-border">
+				<NavBar/>
+				<Board/>
+			</div>
+		)
+}
+
+	}
 
 
 
