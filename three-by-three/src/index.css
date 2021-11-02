@@ -60,15 +60,19 @@
 
 /* board */
 .board-parent{
-	display:flex;
-	flex-direction:column;
+	width: 33em;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 .single-tile{
 	display: flex;
-	align-items: center;
-	flex-direction: flex-start;
+	justify-content: center;
 }
-
+.tile-image{
+	width: 10em;
+	height: 10em;
+	border-radius: 1em;
+}
 
 
 

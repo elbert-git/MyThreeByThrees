@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+// import assets
+import testicon from './Assets/testicon.png';
+
 //create header
 function Header(){
 	return(
@@ -20,7 +23,7 @@ function Header(){
 function Tile(){
 	return(
 		<div className="single-tile">
-			aaa
+			<img className="tile-image" src={testicon}/>
 		</div>
 	)
 }
@@ -29,21 +32,15 @@ class Board extends React.Component {
 	render(){
 		return(
 			<div className="board-parent">
-				<div className="board-row red-border">
-					<Tile/>
-					<Tile/>
-					<Tile/>
-				</div>
-				<div className="board-row red-border">
-					<Tile/>
-					<Tile/>
-					<Tile/>
-				</div>
-				<div className="board-row red-border">
-					<Tile/>
-					<Tile/>
-					<Tile/>
-				</div>
+				<Tile/>
+				<Tile/>
+				<Tile/>
+				<Tile/>
+				<Tile/>
+				<Tile/>
+				<Tile/>
+				<Tile/>
+				<Tile/>
 			</div>
 		)
 	}
