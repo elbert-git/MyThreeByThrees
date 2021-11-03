@@ -4,6 +4,9 @@
 	border-width: 3px;
 	border-color: rgba(255,0,0,0.2);
 }
+.red-bg{
+	background-color: rgba(255, 0, 0, 0.5);
+}
 
 
 /* parents */
@@ -60,18 +63,62 @@
 
 /* board */
 .board-parent{
-	width: 33em;
+	width:100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 1em;
+}
+.tile-tiler{
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(3, 10.25em);
 }
 .single-tile{
 	display: flex;
 	justify-content: center;
+	position: relative;
 }
+
+/* tile */
 .tile-image{
 	width: 10em;
 	height: 10em;
 	border-radius: 1em;
+	margin-bottom: 0.125em;
+	margin-top: 0.125em;
+	padding:0;
+}
+.tile-overlay {
+	position: absolute;
+	top: 0.125em;
+	left: 0.125em;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color:rgba(0,0,0,0.8);
+	width: 10em;
+	height: 10em;
+	border-radius: 0.989em;
+	border-width:2px;
+	border-style:solid;
+	border-color:#50fa7b;
+	opacity: 0;
+	transition: 0.25s;
+	box-sizing:border-box;
+	box-shadow: 0 0 2em #50fa7b;
+}
+.tile-overlay:hover {
+	opacity: 1;
+}
+.tile-rating {
+	font-size: 2em;
+	color: white;
+}
+.tile-title {
+	text-align: center;
+	color: white;
+	text-shadow: 0 0 10px #50fa7b;
+	padding: 1em;
 }
 
 
@@ -87,4 +134,17 @@
  
 .name-font{
 	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+
+/* globals*/
+.noselect {
+	  -webkit-touch-callout: none; /* iOS Safari */
+		    -webkit-user-select: none; /* Safari */
+				     -khtml-user-select: none; /* Konqueror HTML */
+						        -moz-user-select: none; /* Old versions of Firefox */
+										        -ms-user-select: none; /* Internet Explorer/Edge */
+														            user-select: none; /* Non-prefixed version, currently
+																				                                  supported by Chrome, Edge, Opera and Firefox */
+
 }
