@@ -48,8 +48,8 @@ class Tile extends React.Component{
 class Board extends React.Component {
 	render(){
 		return(
-			<div className="board-parent">
-				<div className="tile-tiler">
+			<div className="board-parent red-border">
+				<div className="tile-tiler red-bg">
 					<Tile title="Lucky Star" imageUrl={luckyStarImage} malUrl="https://myanimelist.net/anime/1887/Lucky%E2%98%86Star"/>
 					<Tile title="Eizoken" imageUrl={eizoukenImage} malUrl="https://myanimelist.net/anime/39792/Eizouken_ni_wa_Te_wo_Dasu_na"/>
 					<Tile title="Kill La Kill" imageUrl={killLaKill} malUrl="https://myanimelist.net/anime/18679/Kill_la_Kill"/>
